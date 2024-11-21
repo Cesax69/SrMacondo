@@ -1,0 +1,84 @@
+<!-- tienda.component.html -->
+<link rel="stylesheet" href="../../../../css/home.css">
+
+<!-- El aparador de la tienda, la primera página que ve el cliente al ingresar -->
+<div class="contenedorTienda">
+  <!-- Apartado de la exposición de productos -->
+  <div class="contenedorProductos">
+    <!-- Título del apartado -->
+    <div class="encabezados">
+      <h1 class="Examiner">Tienda</h1>
+    </div>
+
+    <!-- Contenedor de productos -->
+    <div class="contenedor-imagenes">
+      <div class="imagen" routerLink="/sr-macondo/productos">
+        <img src="/assets/image/productos.jpg" alt="productos">
+        <div class="texto-centro">Productos</div>
+      </div>
+      <div class="imagen" routerLink="/sr-macondo/menu">
+        <img src="/assets/image/menu.jpg" alt="">
+        <div class="texto-centro">Menú</div>
+      </div>
+      <div class="imagen" routerLink="/sr-macondo/sucursales">
+        <img src="/assets/image/sucursales.jpg" alt="">
+        <div class="texto-centro">Sucursales</div>
+      </div>
+      <div class="imagen" routerLink="/sr-macondo/juegos">
+        <img src="/assets/image/futbolito.jpg" alt="">
+        <div class="texto-centro">Juegos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apartado lateral donde están los botones para acceder a las páginas: acerca de, notifícame -->
+  <div class="contenedorLateral">
+    <div class="backgroundTiendaLateral">
+      <div class="subLateralTienda">
+        Bienvenido
+      </div>
+      <div class="botonesLateralesGrupo">
+        <!-- Botón que lleva a la página acerca de -->
+        <button class="botonLateral" routerLink="/sr-macondo/acerca-de">
+          <mat-icon>info</mat-icon>
+          Acerca de
+        </button>
+        <!-- Botón que va al servicio de solicitud de noticias de Sr. Macondo -->
+        <button class="botonLateral" routerLink="/sr-macondo/avisame">
+          <mat-icon>notifications</mat-icon>
+          Notifícame
+        </button>
+        <button class="botonLateral" routerLink="/sr-macondo/mapa">
+          <mat-icon>map</mat-icon>
+          Localízate
+        </button>
+        <button class="botonLateral" routerLink="/sr-macondo/pago">
+          <mat-icon><i class="fa-solid fa-credit-card"></i></mat-icon>
+          Pagar
+        </button>
+        <!-- Botón que redirige a la página de clima -->
+        <button class="botonLateral" routerLink="/sr-macondo/weather">
+          <mat-icon>cloud</mat-icon>
+          Ver Clima
+        </button>
+        <!-- Botón para ver videos de YouTube -->
+        <button class="botonLateral" routerLink="/sr-macondo/videos">
+          <mat-icon>play_circle</mat-icon>
+          Ver Videos
+        </button>
+        <!-- Botón que redirige a la página de Instagram -->
+        <button class="botonLateral" routerLink="/sr-macondo/instagram">
+          <mat-icon>photo_camera</mat-icon>
+          Ver Instagram
+        </button>
+        <!-- Botón para la página de envío de mensajes -->
+        
+        <!-- Nuevo botón para WhatsApp -->
+        <button class="botonLateral" routerLink="/sr-macondo/whatsapp">
+          <mat-icon>message</mat-icon>
+          WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
